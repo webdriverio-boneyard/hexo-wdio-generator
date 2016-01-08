@@ -5,7 +5,8 @@ module.exports = function (grunt) {
         babel: {
             options: {
                 sourceMap: false,
-                plugins: ['object-assign']
+                plugins: ['object-assign'],
+                optional: ['runtime']
             },
             dist: {
                 files: [{
