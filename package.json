@@ -2,7 +2,7 @@
   "name": "wdio-hexo-generator",
   "version": "0.2.2",
   "description": "WebdriverIO service for better Sauce Labs integration",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
