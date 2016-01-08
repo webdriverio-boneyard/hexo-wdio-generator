@@ -1,5 +1,5 @@
 {
-  "name": "wdio-hexo-generator",
+  "name": "hexo-wdio-generator",
   "version": "0.0.1",
   "description": "build webdriver.io page",
   "main": "build/index.js",
