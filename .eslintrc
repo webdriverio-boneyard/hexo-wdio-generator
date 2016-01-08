@@ -1,2 +1,10 @@
-build/
-coverage/
+{
+  "extends": "standard",
+  "parser": "babel-eslint",
+  "rules": {
+    "indent": [2, 4]
+  },
+  "globals": {
+    "hexo": true
+  }
+}
