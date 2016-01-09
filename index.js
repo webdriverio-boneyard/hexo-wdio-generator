@@ -23,6 +23,13 @@ hexo.extend.console.register(COMMAND_NAME, pkg.description, {
         { name: 'webmastertools', desc: 'generates webmastertools verification' }
     ]
 }, async (command) => {
-    let build = new Build(command, hexo)
-    await build.run()
+    let args = arguments[5].env.args._
+    let params = []
+
+    if (args.length > 1) {
+        params = args.slice(1)
+    }
+
+    let build = new Build(command, arguments[5].config.wdio, hexo)
+    await build.run(params)
 })
