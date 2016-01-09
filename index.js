@@ -25,11 +25,12 @@ hexo.extend.console.register(COMMAND_NAME, pkg.description, {
 }, async (command) => {
     let args = arguments[5].env.args._
     let params = []
+    let opts = Object.assign(arguments[5].env.args, arguments[5].config.wdio)
 
     if (args.length > 1) {
         params = args.slice(1)
     }
 
-    let build = new Build(command, arguments[5].config.wdio, hexo)
+    let build = new Build(command, opts, hexo)
     await build.run(params)
 })
