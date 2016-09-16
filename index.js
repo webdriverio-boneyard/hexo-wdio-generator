@@ -20,6 +20,7 @@ hexo.extend.console.register(COMMAND_NAME, pkg.description, {
         { name: 'generate', desc: 'generate page with hexo' },
         { name: 'compressCSS', desc: 'minifies CSS' },
         { name: 'compressJS', desc: 'minifies JS' },
+        { name: 'pkgInstall', desc: 'downloads and extracts package from NPM or GitHub' },
         { name: 'webmastertools', desc: 'generates webmastertools verification' }
     ]
 }, async (command) => {
