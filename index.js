@@ -9,7 +9,7 @@ hexo.extend.console.register(COMMAND_NAME, pkg.description, {
     alias: COMMAND_ALIAS,
     usage: COMMAND_USAGE,
     arguments: [
-        { name: 'build', desc: 'kicks of complete build process' },
+        { name: 'build', desc: 'kicks off complete build process' },
         { name: 'clean', desc: 'clean public folder, markdown files and node_modules directory' },
         { name: 'install', desc: 'installs page dependencies' },
         { name: 'getDocs', desc: 'copies over markdown files from webdriverio package' },
